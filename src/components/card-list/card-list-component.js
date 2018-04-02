@@ -10,8 +10,7 @@ const styles = {
   }
 }
 const CardListComponent = ({movies, isLoading}) => {
-  console.log('isloading '+isLoading);
-
+  
   const movieColumns = movies && !isLoading ? movies.map(movie => (
     <Col style={styles.movieColumn} key={movie.id} xs={12} sm={4} md={4} lg={4}>
       <Card movie={movie} />
